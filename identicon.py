@@ -19,9 +19,7 @@ def show(img, title=""):
 #hash string (sha256), then convert each character to hex int
 def hexhash(string):
     str_hash = hashlib.sha256(string.encode()).hexdigest()
-    hex_arr = []
-    for ch in str_hash:
-        hex_arr.append(ord(ch))
+    hex_arr = [ord(c) for c in str_hash]
     return hex_arr
 
 #random rgb value
