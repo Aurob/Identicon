@@ -1,7 +1,7 @@
 # Identicon
 Identicon generation inspired by GitHub's default profile pictures
-<img src='https://raw.githubusercontent.com/Aurob/Identicon/new/master/id1.png'/>
-<img src='https://raw.githubusercontent.com/Aurob/Identicon/new/master/id2.png'/>
-<img src='https://raw.githubusercontent.com/Aurob/Identicon/new/master/id3.png'/>
-<img src='https://raw.githubusercontent.com/Aurob/Identicon/new/master/id4.png'/>
-<img src='https://raw.githubusercontent.com/Aurob/Identicon/new/master/id5.png'/>
+<img src='https://raw.githubusercontent.com/Aurob/Identicon/master/examples/id1.png'/>
+<img src='https://raw.githubusercontent.com/Aurob/Identicon/master/examples/id2.png'/>
+<img src='https://raw.githubusercontent.com/Aurob/Identicon/master/examples/id3.png'/>
+<img src='https://raw.githubusercontent.com/Aurob/Identicon/master/examples/id4.png'/>
+<img src='https://raw.githubusercontent.com/Aurob/Identicon/master/examples/id5.png'/>
