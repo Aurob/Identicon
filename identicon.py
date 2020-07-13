@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import hashlib
 import random
-import time
+
 #color sets the default background, default white
 def image(width, height, color=255):
     img = np.zeros([width, height, 3], np.uint8)
@@ -44,6 +44,7 @@ def icongen(img, hex_arr):
                 hex_i = 0
     return img
 
+#splits a numpy image in half and mirrors horizontally
 def mirror(img, mtype=0):
     height, width, _ = img.shape
     if mtype == 0:
@@ -51,7 +52,10 @@ def mirror(img, mtype=0):
         img[0:height, int(width/2):width] = cv2.flip(left_mirror,1)
     return img
 
-while True:
-    seed = ''.join([chr(random.randint(51, 101)) for i in range(100)])  
-    show(mirror(icongen(image(100,100), hexhash(seed))))
-    cv2.imwrite(str(time.time())+".png", mirror(icongen(image(100,100), hexhash(seed))))
+def new_identicon(seed=False):
+    if not(seed):
+        seed = ''.join([chr(random.randint(51, 101)) for i in range(100)])  
+    icon = mirror(icongen(image(100,100), hexhash(seed)))
+    return icon
+
+    
